@@ -1,56 +1,72 @@
+body {
+    font-family: Helvetica;
+}
+
 h1 {
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
+
 .accordion {
     color: black;
     background-color: white;
     padding: 15px 15px;
 }
+
 .accordion .container {
     position: relative;
     margin: 10px 10px;
 }
+
 .accordion .label {
     position: relative;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
     color: black;
     cursor: pointer;
 }
+
 .accordion .label::before {
-    content: '+';
+    content: 'ᐯ';
     color: black;
     position: absolute;
     top: 50%;
     right: -5px;
-    font-size: 30px;
+    font-size: 20px;
     transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
 }
+
 .accordion .content {
     position: relative;
     background: white;
     height: 0;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
     overflow: hidden;
     transition: 0.5s;
 }
+
 .accordion hr {
     width: 100;
     margin-left: 0;
-    border: 1px solid grey;
+    border: 0.5px solid black;
 }
+
 .accordion .container.active .content {
     height: auto;
 }
+
 .accordion .container.active .label::before {
-    content: '-';
-    font-size: 30px;
+    transform: rotate(180deg);
 }
+
 #btn {
     border-style: solid;
-    border-color: lightskyblue;
-    color: lightskyblue;
+    border-color: skyblue;
+    color: skyblue;
     background-color: white;
     margin-left: auto;
     display: block;
