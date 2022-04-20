@@ -29,24 +29,22 @@ h1 {
 }
 
 .accordion .label::before {
-    content: 'ᐯ';
+    /* content: 'ᐯ'; */
+    content: url(icon.jpg);
     color: black;
     position: absolute;
-    top: 50%;
     right: -5px;
-    font-size: 20px;
-    transform: translateY(-50%);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .accordion .content {
     position: relative;
     background: white;
-    height: 0;
+    max-height: 0;
     font-size: 16px;
     text-align: justify;
     overflow: hidden;
-    transition: 0.5s;
+    transition: max-height 0.5s;
 }
 
 .accordion hr {
@@ -56,7 +54,7 @@ h1 {
 }
 
 .accordion .container.active .content {
-    height: auto;
+    max-height: 500px;
 }
 
 .accordion .container.active .label::before {
@@ -65,8 +63,8 @@ h1 {
 
 #btn {
     border-style: solid;
-    border-color: skyblue;
-    color: skyblue;
+    border-color: dodgerblue;
+    color: dodgerblue;
     background-color: white;
     margin-left: auto;
     display: block;
