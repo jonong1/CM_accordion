@@ -1,11 +1,11 @@
-const accordion = document.getElementsByClassName('container');
+let accordion = document.getElementsByClassName('container');
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
     this.classList.toggle('active')
   })
 }
 
-var button = document.getElementById("btn");
+let button = document.getElementById("btn");
 button.addEventListener('click', function() {
   if (button.getAttribute("data-text-swap") == button.innerHTML) {
     button.innerHTML = button.getAttribute("data-text-original");
