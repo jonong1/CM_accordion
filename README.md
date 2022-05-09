@@ -1,4 +1,4 @@
-# cm_code
+# CM_accordion
 ### Coding Challenge
 You're building an interactive editorial piece about national parks, and want to include an accordion component that will allow the reader to learn more about a different park.
 
